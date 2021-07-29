@@ -1,0 +1,13 @@
+/* Définition des polices */
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('font/webfontkit-20210729-062537/raleway-variablefont_wght-webfont.eot');
+    src: url('font/webfontkit-20210729-062537/raleway-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Raleway/Raleway-VariableFont_wght.ttf') format('truetype'),
+         url('font/Raleway/Raleway-Italic-VariableFont_wght.ttf') format('truetype'),
+         url('font/webfontkit-20210729-062537/raleway-variablefont_wght-webfont.woff') format('woff'),
+         url('font/webfontkit-20210729-062537/raleway-variablefont_wght-webfont.svg#ralewaythin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
