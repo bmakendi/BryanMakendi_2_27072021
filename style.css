@@ -113,3 +113,39 @@ h2
     margin-left: -0.3rem;
     cursor: pointer;
 }
+
+/* Filtres */
+
+#filtres
+{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+#eco, #famille, #romance, #animaux
+{
+    display: flex;
+    align-items: center;
+    border: 2.5px solid #D9D9D9;
+    border-radius: 2rem;
+    margin-left: -90%;
+}
+
+#eco i, #famille i, #romance i, #animaux i
+{   
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+}
+
+#eco span, #famille span, #romance span, #animaux span
+{
+    margin: 0 2%;
+}
