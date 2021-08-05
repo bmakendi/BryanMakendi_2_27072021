@@ -76,3 +76,40 @@ h2
 {
     margin-bottom: -0.5%;
 }
+
+/* Barre de recherche */
+/* tester avec rem au lieu des pourcentages */
+
+#map_marker
+{
+    padding: 1.5%;
+    background-color: #F2F2F2;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+
+#lieu
+{   
+    padding: 1.5%;
+    padding-bottom: 1.2%;
+    padding-top: 1.4%;
+    margin-left: -0.3rem;
+    border: 1px solid #F2F2F2;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#submit
+{
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: #0065FC;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: 1px solid #0065FC;
+    padding: 1.2%;
+    padding-top: 1.4%;
+    margin-left: -0.3rem;
+    cursor: pointer;
+}
