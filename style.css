@@ -51,6 +51,10 @@ nav li
    align-content: center;
 }
 
+#li_inscription
+{
+    padding-right: 0;
+}
 nav a
 {
     color: black;
@@ -61,7 +65,11 @@ nav a
 .menu:hover
 {
     border-top: 3px solid #0065FC;
-    color: #0065FC;
+}
+
+.menu a:hover
+{
+    color:#0065FC
 }
 
 #inscription
@@ -78,7 +86,6 @@ h2
 }
 
 /* Barre de recherche */
-/* tester avec rem au lieu des pourcentages */
 
 #map_marker
 {
@@ -96,14 +103,14 @@ h2
     margin-left: -0.3rem;
     border: 1px solid #F2F2F2;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 #submit
 {
     color: white;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
     background-color: #0065FC;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -120,8 +127,14 @@ h2
 {
     margin-top: 3%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     font-weight: bold;
+}
+
+#filtres p
+{
+    margin-right: 2%;
+    margin-bottom: 1rem;
 }
 
 #eco, #famille, #romance, #animaux
@@ -130,7 +143,8 @@ h2
     align-items: center;
     border: 2.5px solid #D9D9D9;
     border-radius: 2rem;
-    margin-left: -90%;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
 }
 
 #eco i, #famille i, #romance i, #animaux i
@@ -138,6 +152,7 @@ h2
     display: flex;
     height: 3rem;
     width: 3rem;
+    margin-left: -2px;
     background-color: #DEEBFF;
     border-radius: 100%;
     justify-content: center;
@@ -147,5 +162,46 @@ h2
 
 #eco span, #famille span, #romance span, #animaux span
 {
-    margin: 0 2%;
+    margin: 0 1rem;
 }
+
+/* Barre d'info */
+
+#info
+{
+    display: flex;
+    align-items: center;
+}
+
+#info_icone
+{
+    width: 1.6rem;
+    height: 1.6rem;
+    min-width: 1.6rem;
+    min-height: 1.6rem;
+    color: #0065FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #D9D9D9;
+    border-radius: 2rem;
+    margin-right: 0.7%;
+}
+
+/* Section hébergements */
+
+#hebergements
+{
+    display: flex;
+}
+
+#heberge_globaux
+{
+    display: flex;
+}
+
+#heberge_globaux img
+{
+    width: 20%;
+}
+
