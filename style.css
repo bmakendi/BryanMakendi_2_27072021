@@ -6,9 +6,13 @@
 
 body {
     font-family: "Raleway", "Sans serif";
-    margin-right: 14rem;
-    margin-left: 14rem;
+    max-width: 1300px;
+    margin: auto;
     margin-top: 0;
+}
+
+:focus {
+    outline: none;
 }
 
 a {
@@ -40,7 +44,6 @@ nav ul {
 }
 
 nav li {
-    padding: 2rem;
     margin: 0;
     align-content: center;
 }
@@ -51,14 +54,13 @@ nav li {
 nav a {
     color: black;
     width: 100%;
+    padding: 2rem;
 }
 
-.menu:hover {
-    border-top: 3px solid #0065fc;
-}
-
-.menu a:hover {
+.menu a:hover,
+.menu a:focus {
     color: #0065fc;
+    border-top: 3px solid #0065fc;
 }
 
 #inscription {
@@ -180,12 +182,16 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     background-color: #f2f2f2;
-    width: 67%;
+    width: 65%;
     height: 40rem;
     border-radius: 1rem;
     justify-content: space-around;
-    padding-top: 1rem;
+    padding: 1rem 1rem 0 1rem;
     margin-top: 1rem;
+}
+
+#heberge_globaux > *{
+    flex: 0 1 25ch;
 }
 
 #heberge_globaux a {
@@ -201,12 +207,11 @@ h2 {
 }
 
 .hotel {
-    width: 25ch;
     max-width: 25ch;
     height: 12.5rem;
     max-height: 12.5rem;
     background-color: white;
-    border-radius: 1rem;
+    border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
 }
 
@@ -214,7 +219,7 @@ h2 {
     margin: 0.4rem;
 }
 
-.hotel figure img {
+.hotel img {
     object-fit: cover;
     height: 7rem;
     width: 100%;
@@ -240,10 +245,17 @@ figcaption {
     margin-bottom: 0.4rem;
 }
 
+/* Les plus populaires */
+
 #populaires {
-    width: 30%;
+    width: 28%;
     background-color: #f2f2f2;
     border-radius: 1rem;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem 0.5rem 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 #titre_pop {
@@ -254,13 +266,46 @@ figcaption {
 #titre_pop h2 {
     align-self: center;
     justify-self: center;
+    margin-top: -0.5rem;
 }
 
 #titre_pop i {
     align-self: center;
     justify-self: center;
+    font-size: 1.5rem;
 }
 
+.hotel_pop {
+    display: flex;
+    height: 9rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+}
+
+.hotel_pop figure {
+    display: flex;
+    margin: 0.4rem;
+}
+
+.hotel_pop img {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 70%;
+    max-width: 12ch;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.hotel_pop .stars {
+
+}
+
+/* TODO
+div pour l'image et div pour le content pour hebergemetns populaires*/
+
+/* Icônes étoiles */
 
 .fa-star {
     color: #0065fc;
