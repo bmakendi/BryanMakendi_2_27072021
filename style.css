@@ -209,7 +209,7 @@ h2 {
     margin-top: 1rem;
 }
 
-#heberge_globaux > *{
+#heberge_globaux > * {
     flex: 0 1 25ch;
 }
 
@@ -217,7 +217,7 @@ h2 {
     height: 12.5rem;
 }
 
-#heberge_globaux h2{
+#heberge_globaux h2 {
     height: 2rem;
     max-height: 2rem;
     flex: 100%;
@@ -313,7 +313,7 @@ figcaption {
 }
 
 .image {
-    margin: 0.30rem;
+    margin: 0.3rem;
 }
 
 .hotel_pop img {
@@ -351,7 +351,13 @@ figcaption {
     color: #0065fc;
 }
 
-#gris1, #gris2, #gris3, #gris4, #gris5, #gris6, #gris7 {
+#gris1,
+#gris2,
+#gris3,
+#gris4,
+#gris5,
+#gris6,
+#gris7 {
     color: #d9d9d9;
 }
 
@@ -431,11 +437,13 @@ figcaption {
     border-top-right-radius: 1.25rem;
 }
 
-#item2 img, #item6 img {
+#item2 img,
+#item6 img {
     height: 81%;
 }
 
-#item3 img, #item5 img {
+#item3 img,
+#item5 img {
     height: 76%;
 }
 
