@@ -14,7 +14,7 @@ body {
 }
 
 .largeur {
-    max-width: 1300px;
+    max-width: 1350px;
     margin: auto;
     margin-top: 0;
 }
@@ -198,46 +198,67 @@ h2 {
 }
 
 #heberge_globaux {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+    column-gap: 2rem;
     background-color: #f2f2f2;
-    width: 65%;
-    height: 40rem;
+    padding: 2rem;
     border-radius: 1rem;
-    justify-content: space-around;
-    padding: 1rem 1rem 0 1rem;
-    margin-top: 1rem;
-}
-
-#heberge_globaux > *{
-    flex: 0 1 25ch;
+    width: 63%;
 }
 
 #heberge_globaux a {
-    height: 12.5rem;
+    height: 100%;
 }
 
 #heberge_globaux h2{
-    height: 2rem;
-    max-height: 2rem;
-    flex: 100%;
     font-weight: bold;
-    margin-left: 1rem;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin-top: 0;
+}
+
+#hotel1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#hotel2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#hotel3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+#hotel4 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#hotel5 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#hotel6 {
+    grid-column: 3/4;
+    grid-row: 3/4;
 }
 
 #afficher {
-    max-width: 10ch;
-    max-height: 2rem;
-    margin-right: 43rem;
     font-weight: bold;
     font-size: 1.25rem;
-    justify-self: flex-start;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    width: 50%;
 }
 
 .hotel {
-    max-width: 25ch;
-    height: 12.5rem;
-    max-height: 12.5rem;
+    padding-bottom: 0.5rem;
     background-color: white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
@@ -276,19 +297,20 @@ figcaption {
 /* Les plus populaires */
 
 #populaires {
-    width: 26%;
+    width: 25%;
     background-color: #f2f2f2;
     border-radius: 1rem;
-    margin-top: 1rem;
-    padding: 1rem 1.5rem 0.5rem 1.5rem;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto repeat(3, 1fr);
+    row-gap: 2rem;
+    padding: 2rem;
 }
 
 #titre_pop {
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    min-height: 100%;
 }
 
 #titre_pop h2 {
@@ -464,4 +486,37 @@ footer ul {
 
 footer li {
     margin: 0.5rem 0;
+}
+
+/* MEDIA QUERIES */
+
+/* Écrans d'au plus 1370px - Tablettes etc */
+
+@media all and (max-width: 1420px) {
+    .largeur {
+        max-width: 1300px;
+        margin: auto;
+        margin-top: 0;
+    }
+
+    #hebergements{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #heberge_globaux {
+        width: 95%;
+        margin-top: 2rem;
+    }
+    #populaires{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 10rem;
+        column-gap: 2rem;
+        width: 95%;
+    }
+
+    #titre_pop {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
 }
