@@ -473,3 +473,15 @@ footer ul {
 footer li {
     margin: 0.5rem 0;
 }
+
+/* MEDIA QUERIES */
+
+/* Écran d'au plus 1370px - Tablettes etc */
+
+@media all and (max-width:1370px) {
+    
+    body {
+        margin: auto;
+    }
+
+} 
