@@ -9,6 +9,7 @@
     </head>
 
     <body>
+        <!--HEADER-->
         <header class="largeur_head">
             <h1 id="logo_site">
                 <a href="reservia.html">
@@ -19,6 +20,7 @@
                 </a>
             </h1>
 
+            <!--MENU-->
             <nav>
                 <a href="#hebergements" class="menu" id="menu1">Hébergements</a>
                 <a href="#activites" class="menu" id="menu2">Activités</a>
@@ -26,9 +28,12 @@
             <a href="#" id="inscription">S'inscrire</a>
         </header>
 
+        <!--CORPS DE LA PAGE-->
         <section class="largeur">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
+
+            <!--BARRE DE RECHERCHE-->
             <div id="recherche">
                 <form method="GET" action="reservia.html">
                     <i class="fas fa-map-marker-alt" id="map_marker"></i>
@@ -41,13 +46,13 @@
                     />
                     <button type="submit" id="submit">
                         <span>Rechercher</span>
-                        <i class="fas fa-search" aria-hidden="true">
+                        <i class="fas fa-search" id="loupe" aria-hidden="true">
                         </i>
                     </button>
-                    
                 </form>
             </div>
 
+            <!-- FILTRES -->
             <div id="filtres">
                 <p>Filtres</p>
                 <a href="#">
@@ -73,12 +78,15 @@
                 </a>
             </div>
 
+            <!-- TEXTE INFORMATIF -->
             <div id="info">
                 <i class="fas fa-info" id="info_icone"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 
+            <!-- RESULTATS DE LA RECHERCHE -->
             <div id="hebergements">
+                <!-- RESULTATS PRINCIPAUX -->
                 <div id="heberge_globaux">
                     <h2>Hébergements à Marseille</h2>
                     <a href="#">
@@ -197,6 +205,8 @@
                     </a>
                     <a href="#" id="afficher">Afficher plus</a>
                 </div>
+
+                <!-- RESULTATS D'HOTELS POPULAIRES -->
                 <div id="populaires" class="largeur_populaire">
                     <div id="titre_pop">
                         <h2>Les plus populaires</h2>
@@ -276,6 +286,7 @@
                 </div>
             </div>
 
+            <!-- ACTIVITES -->
             <div id="activites">
                 <h2>Activités à Marseille</h2>
                 <a href="#" id="item1">
@@ -335,6 +346,7 @@
             </div>
         </section>
 
+        <!-- FOOTER -->
         <footer>
             <div class="largeur" id="contenu_footer">
                 <div id="a_propos">

@@ -115,10 +115,6 @@ form {
     cursor: pointer;
 }
 
-.fa-search:before {
-    content: "\f002";
-}
-
 /* Filtres */
 
 #filtres {
@@ -748,12 +744,10 @@ footer li {
     }
 }
 
-/* On ne veut pas de la loupe pour le bouton de recherche à moins d'être 
-   à moins de 600px (Généralement les téléphones) */
-   
-@media all and (min-width: 600.001px) {
-    button i {
-        display: none;
+/* Empêche la loupe de s'afficher à moins d'être sur un écran petit */
+@media all and (min-width: 600.01px) {
+    #loupe {
+        display: none !important;
     }
 }
 
