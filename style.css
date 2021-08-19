@@ -152,9 +152,11 @@ form {
 #romance i,
 #animaux i {
     display: flex;
-    height: 3.15rem;
-    width: 3.25rem;
-    margin-left: -0.07rem;
+    height: 3rem;
+    width: 3rem;
+    min-height: 3.2rem;
+    min-width: 3.2rem;
+    margin: -0.6px;
     background-color: #deebff;
     border-radius: 100%;
     justify-content: center;
@@ -189,7 +191,6 @@ form {
 }
 
 /* Section hébergements */
-/* Should've used grid */
 
 #hebergements {
     display: flex;
@@ -212,7 +213,7 @@ form {
     background-color: #f2f2f2;
     padding: 2rem;
     border-radius: 1rem;
-    width: 63%;
+    flex-basis: 62%;
 }
 
 #heberge_globaux a {
@@ -265,46 +266,44 @@ form {
 }
 
 .hotel {
-    padding-bottom: 0.5rem;
+    padding: 0.37rem;
     background-color: white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
 }
 
 .hotel figure {
-    margin: 0.4rem;
+    margin: 0;
 }
 
 .hotel img {
     object-fit: cover;
     height: 7rem;
     width: 100%;
-    max-width: 30rem;
+    max-width: 100%;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    padding-top: 0.3rem;
 }
 
 figcaption {
     font-weight: bold;
-    margin-left: 0.4rem;
+    margin: 0.4rem 0 0.4rem 0.5rem;
 }
 
 .hotel p {
     margin-top: 0rem;
-    margin-left: 0.7rem;
+    margin-left: 0.5rem;
     margin-bottom: 0.4rem;
 }
 
 .hotel span {
-    margin-left: 0.7rem;
+    margin-left: 0.5rem;
     margin-bottom: 0.4rem;
 }
 
 /* Les plus populaires */
 
 #populaires {
-    width: 25%;
     background-color: #f2f2f2;
     border-radius: 1rem;
     display: grid;
@@ -312,6 +311,8 @@ figcaption {
     grid-template-columns: 1fr;
     row-gap: 2rem;
     padding: 2rem;
+    flex-basis: 25.5%;
+    margin: 0;
 }
 
 #titre_pop {
@@ -340,6 +341,7 @@ figcaption {
     background-color: white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
+    overflow: auto;
 }
 
 .image {
@@ -515,7 +517,6 @@ footer li {
     }
 
     #heberge_globaux {
-        width: 95%;
         margin-top: 2rem;
     }
 
@@ -523,7 +524,6 @@ footer li {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto 10rem;
         column-gap: 2rem;
-        width: 95%;
     }
 
     #titre_pop {
@@ -584,11 +584,10 @@ footer li {
 
 /* Écrans d'au plus 1040px */
 
-@media all and (max-width: 1040px) {
+@media all and (max-width: 1115px) {
     #populaires {
         grid-template-columns: 1fr;
         grid-template-rows: auto repeat(3, 9rem);
-        width: 93%;
     }
 
     #titre_pop {
@@ -616,7 +615,6 @@ footer li {
 @media all and (max-width: 900px) {
     #heberge_globaux {
         grid-template-columns: 1fr 1fr;
-        width: 93%;
     }
 
     #heberge_globaux h2 {
@@ -673,15 +671,10 @@ footer li {
 /* Écrans d'au plus 608px */
 
 @media all and (max-width: 608px) {
-    .largeur_populaire {
-        padding: 2rem;
-        margin-left: -2rem;
-    }
-
     #populaires {
         border-radius: unset;
-        width: 100%;
-        max-width: 100%;
+        margin-left: -2rem;
+        margin-right: -2rem;
     }
 
     #heberge_globaux {
@@ -693,15 +686,6 @@ footer li {
 
     #heberge_globaux h2 {
         grid-column: 1/2;
-    }
-
-    #heberge_globaux figure {
-        width: 100%;
-    }
-
-    #heberge_globaux img {
-        width: 100%;
-        max-width: 97.6%;
     }
 
     #afficher {
