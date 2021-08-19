@@ -2,35 +2,32 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="icones/css/all.css" />
         <title>Reservia</title>
     </head>
 
     <body>
-        <header class="largeur">
-            <div id="titre_principal">
-                <h1 id="logo_site">
-                    <a href="reservia.html">
-                        <img
-                            src="images/logo/Reservia.svg"
-                            alt="Logo du site Reservia"
-                        />
-                    </a>
-                </h1>
-            </div>
+        <header class="largeur_head">
+            <h1 id="logo_site">
+                <a href="reservia.html">
+                    <img
+                        src="images/logo/Reservia.svg"
+                        alt="Logo du site Reservia"
+                    />
+                </a>
+            </h1>
 
             <nav>
                 <ul>
-                    <li class="menu">
+                    <li class="menu" id="menu1">
                         <a href="#hebergements">Hébergements</a>
                     </li>
-                    <li class="menu"><a href="#activites">Activités</a></li>
-                    <li id="li_inscription">
-                        <a href="#" id="inscription">S'inscrire</a>
-                    </li>
+                    <li class="menu" id="menu2"><a href="#activites">Activités</a></li>
                 </ul>
             </nav>
+            <a href="#" id="inscription">S'inscrire</a>
         </header>
 
         <section class="largeur">
@@ -86,7 +83,7 @@
                         <div class="hotel" id="hotel1">
                             <figure>
                                 <img
-                                    src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                    src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                                     alt="Photo de l'Auberge la Cannebière"
                                 />
                                 <figcaption>Auberge la Cannebière</figcaption>
@@ -105,7 +102,7 @@
                         <div class="hotel" id="hotel2">
                             <figure>
                                 <img
-                                    src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                                    src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                                     alt="Photo de l'Hôtel du port"
                                 />
                                 <figcaption>Hôtel du port</figcaption>
@@ -124,7 +121,7 @@
                         <div class="hotel" id="hotel3">
                             <figure>
                                 <img
-                                    src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                                    src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                                     alt="Photo de l'Hôtel Les mouettes"
                                 />
                                 <figcaption>Hôtel Les mouettes</figcaption>
@@ -143,7 +140,7 @@
                         <div class="hotel" id="hotel4">
                             <figure>
                                 <img
-                                    src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                    src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                                     alt="Photo de l'Hôtel de la mer"
                                 />
                                 <figcaption>Hôtel de la mer</figcaption>
@@ -162,7 +159,7 @@
                         <div class="hotel" id="hotel5">
                             <figure>
                                 <img
-                                    src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                                    src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                                     alt="Photo de l'Auberge Le Panier"
                                 />
                                 <figcaption>Auberge Le Panier</figcaption>
@@ -181,7 +178,7 @@
                         <div class="hotel" id="hotel6">
                             <figure>
                                 <img
-                                    src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                                    src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                                     alt="Photo de l'Hôtel chez Amina"
                                 />
                                 <figcaption>Hôtel chez Amina</figcaption>
@@ -198,7 +195,7 @@
                     </a>
                     <a href="#" id="afficher">Afficher plus</a>
                 </div>
-                <div id="populaires">
+                <div id="populaires" class="largeur_populaire">
                     <div id="titre_pop">
                         <h2>Les plus populaires</h2>
                         <i class="fas fa-chart-line"></i>
@@ -207,7 +204,7 @@
                         <div class="hotel_pop" id="pop1">
                             <div class="image">
                                 <img
-                                    src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                    src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                                     alt="Photo de l'Hôtel Le soleil du matin"
                                 />
                             </div>
@@ -232,7 +229,7 @@
                         <div class="hotel_pop" id="pop2">
                             <div class="image">
                                 <img
-                                    src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                                    src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
                                     alt="Photo d'Au cœur de l'eau Chambres d'hôtes"
                                 />
                             </div>
@@ -257,7 +254,7 @@
                         <div class="hotel_pop" id="pop3">
                             <div class="image">
                                 <img
-                                    src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                                    src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                                     alt="Photo de l'Hôtel Tout bleu et Blanc"
                                 />
                             </div>
@@ -296,7 +293,7 @@
                 <a href="#" id="item2">
                     <figure>
                         <img
-                            src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                            src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                             alt="Photo du Fort de Pomègues"
                         />
                         <figcaption>Fort de Pomègues</figcaption>
@@ -305,7 +302,7 @@
                 <a href="#" id="item3">
                     <figure>
                         <img
-                            src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                            src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                             alt="Photo des Îles du Frioul"
                         />
                         <figcaption>Îles du Frioul</figcaption>
@@ -323,7 +320,7 @@
                 <a href="#" id="item5">
                     <figure>
                         <img
-                            src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                            src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                             alt="Photo de Notre-Dame-de-la-Garde"
                         />
                         <figcaption>Notre-Dame-de-la-Garde</figcaption>
@@ -332,7 +329,7 @@
                 <a href="#" id="item6">
                     <figure>
                         <img
-                            src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                            src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                             alt="Photo du parc Longchamp"
                         />
                         <figcaption>Parc Longchamp</figcaption>
