@@ -13,7 +13,9 @@ body {
     margin: 0;
 }
 
-.largeur, .largeur_head, .largeur_populaire{
+.largeur,
+.largeur_head,
+.largeur_populaire {
     max-width: 1350px;
     margin: auto;
     margin-top: 0;
@@ -43,29 +45,20 @@ nav {
     grid-area: menu;
 }
 
-nav ul {
+nav a {
     list-style-type: none;
     display: flex;
     align-items: center;
     margin: 0;
-    min-height: 100%;
-    padding: 0;
+    min-height: 80%;
+    font-weight: 500;
+    padding: 0.5rem 2rem;
+    border-top: 3px transparent solid;
 }
 
-nav li {
-    margin: 0;
-    align-content: center;
-}
-
-nav a {
-    color: black;
-    width: 100%;
-    padding: 2.2rem 2rem 2rem;
-}
-
-.menu a:hover {
+.menu:hover {
     color: #0065fc;
-    border-top: 3.5px solid #0065fc;
+    border-top: 3px solid #0065fc;
 }
 
 #inscription {
@@ -218,7 +211,7 @@ h2 {
     height: 100%;
 }
 
-#heberge_globaux h2{
+#heberge_globaux h2 {
     font-weight: bold;
     grid-column: 1/4;
     grid-row: 1/2;
@@ -342,7 +335,7 @@ figcaption {
 }
 
 .image {
-    margin: 0.30rem;
+    margin: 0.3rem;
 }
 
 .hotel_pop img {
@@ -380,7 +373,13 @@ figcaption {
     color: #0065fc;
 }
 
-#gris1, #gris2, #gris3, #gris4, #gris5, #gris6, #gris7 {
+#gris1,
+#gris2,
+#gris3,
+#gris4,
+#gris5,
+#gris6,
+#gris7 {
     color: #d9d9d9;
 }
 
@@ -460,11 +459,13 @@ figcaption {
     border-top-right-radius: 1.25rem;
 }
 
-#item2 img, #item6 img {
+#item2 img,
+#item6 img {
     height: 81%;
 }
 
-#item3 img, #item5 img {
+#item3 img,
+#item5 img {
     height: 76%;
 }
 
@@ -495,12 +496,12 @@ footer li {
     margin: 0.5rem 0;
 }
 
-/* MEDIA QUERIES */
+/*** MEDIA QUERIES ***/
 
 /* Écrans d'au plus 1370px */
 
 @media all and (max-width: 1420px) {
-    #hebergements{
+    #hebergements {
         display: flex;
         flex-direction: column-reverse;
     }
@@ -510,7 +511,7 @@ footer li {
         margin-top: 2rem;
     }
 
-    #populaires{
+    #populaires {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto 10rem;
         column-gap: 2rem;
@@ -538,7 +539,7 @@ footer li {
         margin-top: 0;
         margin-bottom: 1.5rem;
     }
-    
+
     #activites img {
         height: 7rem;
     }
@@ -546,27 +547,27 @@ footer li {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    
+
     #item2 {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    
+
     #item3 {
         grid-row: 2/3;
         grid-column: 3/4;
     }
-    
+
     #item4 {
         grid-row: 3/4;
         grid-column: 1/2;
     }
-    
+
     #item5 {
         grid-row: 3/4;
         grid-column: 2/3;
     }
-    
+
     #item6 {
         grid-row: 3/4;
         grid-column: 3/4;
@@ -602,6 +603,8 @@ footer li {
     }
 }
 
+/* Écrans d'au plus 900px */
+
 @media all and (max-width: 900px) {
     #heberge_globaux {
         grid-template-columns: 1fr 1fr;
@@ -630,22 +633,24 @@ footer li {
         grid-row: 3/4;
         grid-column: 1/2;
     }
-    
+
     #item4 {
         grid-row: 3/4;
         grid-column: 2/3;
     }
-    
+
     #item5 {
         grid-row: 4/5;
         grid-column: 1/2;
     }
-    
+
     #item6 {
         grid-row: 4/5;
         grid-column: 2/3;
     }
 }
+
+/* Écrans d'au plus 890px */
 
 @media all and (max-width: 890px) {
     #contenu_footer {
@@ -657,8 +662,9 @@ footer li {
     }
 }
 
-@media all and (max-width: 608px) {
+/* Écrans d'au plus 608px */
 
+@media all and (max-width: 608px) {
     .largeur_populaire {
         padding: 2rem;
         margin-left: -2rem;
@@ -669,7 +675,7 @@ footer li {
         width: 100%;
         max-width: 100%;
     }
-    
+
     #heberge_globaux {
         grid-template-columns: 1fr;
         background-color: unset;
@@ -730,6 +736,8 @@ footer li {
     }
 }
 
+/* Écrans d'au plus 600px - téléphones compris */
+
 @media all and (max-width: 600px) {
     .largeur_head {
         padding: 0;
@@ -746,29 +754,28 @@ footer li {
         margin: 0;
         padding: 1rem 2rem;
     }
+
     nav {
         order: 2;
-        justify-content:stretch;
-    }
-
-    nav ul {
-        padding: 2rem;
-        justify-content: space-between;
+        align-items: center;
+        grid-area: menu;
     }
 
     #menu1,
     #menu2 {
         width: 50%;
-    }
-    
-    .menu a {
-        border-top: none;
-        border-bottom: 3px solid #F2F2F2;
+        padding: 1rem 0 0.5rem 0;
+        justify-content: center;
     }
 
-    .menu a:hover {
+    .menu {
         border-top: none;
-        border-bottom:3px solid #0065FC;;
+        border-bottom: 3px solid #f2f2f2;
+    }
+
+    .menu:hover {
+        border-top: none;
+        border-bottom: 3px solid #0065fc;
     }
 
     #inscription {
@@ -777,5 +784,21 @@ footer li {
 
     #filtres p {
         width: 100%;
+    }
+
+    .largeur {
+        margin-top: 3rem;
+    }
+
+    #item1 figcaption,
+    #item2 figcaption,
+    #item3 figcaption {
+        margin-bottom: 0.35rem;
+    }
+
+    #item4 figcaption,
+    #item5 figcaption,
+    #item6 figcaption {
+        margin-bottom: 1rem;
     }
 }
