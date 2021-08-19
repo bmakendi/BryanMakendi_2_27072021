@@ -78,6 +78,11 @@ h2 {
 
 /* Barre de recherche */
 
+form {
+    display: inline-flex;
+    max-width: 100%;
+    overflow: auto;
+}
 #map_marker {
     padding: 1.11rem 1.25rem 1.17rem;
     background-color: #f2f2f2;
@@ -86,10 +91,13 @@ h2 {
 }
 
 #lieu {
-    padding: 1rem 1.5rem;
+    padding: 0 1.5rem;
     margin-left: -0.3rem;
     width: 14rem;
-    border: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    border-right: none;
+    border-left: none;
     font-weight: bold;
     font-size: 1rem;
 }
@@ -788,6 +796,15 @@ footer li {
 
     .largeur {
         margin-top: 3rem;
+    }
+
+    form {
+        display: flex;
+        width: 100%;
+    }
+
+    input {
+        flex: 1;
     }
 
     #item1 figcaption,
