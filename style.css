@@ -180,6 +180,7 @@ form {
 
 #info_icone {
     width: 1.6rem;
+    min-width: 1.6rem;
     min-height: 1.6rem;
     color: #0065fc;
     display: flex;
