@@ -115,6 +115,10 @@ form {
     cursor: pointer;
 }
 
+.fa-search:before {
+    content: "\f002";
+}
+
 /* Filtres */
 
 #filtres {
@@ -744,6 +748,15 @@ footer li {
     }
 }
 
+/* On ne veut pas de la loupe pour le bouton de recherche à moins d'être 
+   à moins de 600px (Généralement les téléphones) */
+   
+@media all and (min-width: 600.001px) {
+    button i {
+        display: none;
+    }
+}
+
 /* Écrans d'au plus 600px - téléphones compris */
 
 @media all and (max-width: 600px) {
@@ -788,6 +801,10 @@ footer li {
 
     #inscription {
         order: 1;
+    }
+
+    button span {
+        display: none;
     }
 
     #filtres p {
