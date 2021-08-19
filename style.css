@@ -115,6 +115,10 @@ form {
     cursor: pointer;
 }
 
+input[type=search] {
+    -webkit-appearance: none;
+}
+
 /* Filtres */
 
 #filtres {
