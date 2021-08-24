@@ -734,7 +734,7 @@ footer li {
 }
 
 /* Empêche la loupe de s'afficher à moins d'être sur un écran petit */
-@media all and (min-width: 600.01px) {
+@media all and (min-width: 600.02px) {
     #loupe {
         display: none !important;
     }
@@ -742,7 +742,7 @@ footer li {
 
 /* Écrans d'au plus 600px - téléphones compris */
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 600.01px) {
     .largeur_head {
         padding: 0;
     }
